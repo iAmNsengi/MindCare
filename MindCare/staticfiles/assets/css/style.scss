@@ -1,0 +1,19 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.btn-get-started {
+  background: #1f4870;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-get-started:hover {
+  background: #163754;
+  transform: translateY(-3px);
+}

@@ -1,0 +1,136 @@
+/* 🔹 General Page Styling */
+body {
+  background-color: #f2f7fc;
+  font-family: 'Arial', sans-serif;
+  color: #1f4870;
+  padding-bottom: 50px;
+}
+
+/* 🔹 Main Container */
+.container {
+  max-width: 800px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Page Title */
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1f4870;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #1f4870;
+  padding-bottom: 10px;
+}
+
+/* 🔹 Section Headings */
+h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1f4870;
+  margin-top: 20px;
+  border-bottom: 2px solid #1f4870;
+  padding-bottom: 5px;
+}
+
+/* 🔹 Form Labels */
+.form-label {
+  font-weight: bold;
+  color: #1f4870;
+}
+
+/* 🔹 Form Inputs */
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #1f4870;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #1f4870;
+  background-color: #f9fbfd;
+  transition: 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #1f4870;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(31, 72, 112, 0.5);
+}
+
+/* 🔹 Question Box */
+.question-box {
+  background-color: #f8fafc;
+  border: 2px solid #1f4870;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.question-box:hover {
+  background-color: #e3ecf9;
+  border-color: #1f4870;
+}
+
+/* 🔹 Upload Button */
+.btn-primary {
+  background-color: #1f4870;
+  border: none;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #16324f;
+  transform: scale(1.05);
+}
+
+/* 🔹 Back to Quizzes Button */
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  input[type="text"],
+  textarea,
+  select {
+      font-size: 14px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+      font-size: 14px;
+      padding: 10px 14px;
+  }
+}

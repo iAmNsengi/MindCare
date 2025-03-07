@@ -1,0 +1,205 @@
+/* General Page Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5faff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Container */
+.container {
+  max-width: 1200px;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #1f4870;
+  margin-bottom: 20px;
+}
+
+/* Professional Cards */
+.card {
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Professional Images */
+.img-fluid {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #1f4870;
+}
+
+/* Available Slots */
+.list-unstyled {
+  max-height: 120px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+btn-see-more {
+  background: transparent;
+  border: none;
+  color: #1f4870;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-see-more:hover {
+  text-decoration: underline;
+}
+
+/* Book Appointment Button */
+.book-appointment-btn {
+  background: #1f4870;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  width: 100%;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.book-appointment-btn:hover {
+  background: #163754;
+  transform: scale(1.05);
+}
+
+/* 🔹 Force Modal Title to Use #1f4870 */
+.modal-header {
+  background: white !important; /* ✅ Keep background white */
+  border-bottom: 3px solid #1f4870; /* ✅ Adds a professional underline */
+  border-radius: 8px 8px 0 0;
+}
+
+/* 🔹 Make the Title #1f4870 */
+.modal-title {
+  color: #1f4870 !important;  /* ✅ Force the color */
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+/* 🔹 Ensure Close Button is Styled Properly */
+.modal-header .btn-close {
+  color: #1f4870 !important;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+.modal-header .btn-close:hover {
+  opacity: 1;
+}
+
+/* 🔹 Style the Confirm Button */
+.modal-footer .btn-primary,
+.modal-body .btn-primary {
+  background: #1f4870 !important;
+  border: none;
+}
+.modal-footer .btn-primary:hover,
+.modal-body .btn-primary:hover {
+  background: #15375b !important;
+}
+
+/* 🔹 Improve Modal Body for Better Readability */
+.modal-body {
+  padding: 20px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* 🔹 Style Input Fields */
+.modal-body input, 
+.modal-body select, 
+.modal-body textarea {
+  border: 1px solid #1f4870 !important;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+
+.form-label {
+  font-weight: bold;
+  color: #1f4870;
+}
+
+.form-control, .form-select {
+  border: 2px solid #1f4870;
+  border-radius: 5px;
+}
+
+/* Confirm Button */
+.modal .btn-primary {
+  background: #1f4870;
+  border: none;
+  font-weight: bold;
+}
+
+.modal .btn-primary:hover {
+  background: #163754;
+  transform: scale(1.05);
+}
+
+/* Success Message */
+#success-popup {
+  background-color: #1f4870;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#meet-link {
+  color: #ffd700;
+  font-weight: bold;
+}
+/* 🔹 Style the Back Button */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f4870;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Add Hover Effect */
+.back-button:hover {
+  background-color: #16324f;
+  transform: scale(1.05);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔹 Make the Back Button More Clickable */
+.back-button:active {
+  transform: scale(0.98);
+  box-shadow: none;
+}

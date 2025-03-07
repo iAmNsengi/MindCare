@@ -1,0 +1,116 @@
+/* Features Section */
+/* Enhanced Features Section Styling */
+.features-section {
+  padding: 100px 0;
+  background: var(--secondary-color);
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Feature Box Styling */
+.feature-box {
+  background: var(--light-text);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.feature-box h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.feature-box p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+/* Hover Effect */
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Decorative Background Effect */
+.feature-box::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  background: rgba(255, 193, 7, 0.1);
+  transition: 0.4s ease-in-out;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.feature-box:hover::before {
+  top: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features-section h2 {
+    font-size: 2rem;
+  }
+
+  .feature-box {
+    padding: 30px;
+  }
+}
+
+
+iframe.skiptranslate {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  opacity: 0 !important;
+}
+
+/* Hide Google Translate Branding */
+.goog-logo-link, 
+.goog-te-gadget span:nth-child(2), 
+.goog-te-gadget span,
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget span:nth-child(2),
+.goog-te-gadget span {
+    display: none !important;
+}
+
+/* Ensure the dropdown is visible and styled nicely */
+.goog-te-combo {
+    display: inline-block !important;
+    background: #ffffff !important;
+    color: #1f4870 !important;
+    border-radius: 4px !important;
+    padding: 6px 10px !important;
+    border: 1px solid #ddd !important;
+    cursor: pointer;
+}
+
+/* Remove unwanted margin and padding */
+.goog-te-gadget-simple {
+    font-size: 0 !important;
+    background: none !important;
+    border: none !important;
+}
+
+body {
+    top: 0 !important;
+}

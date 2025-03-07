@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: #1f4870;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  background-color: transparent;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+  background-color: #163754;
+  transform: scale(1.05);
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  padding: 30px;
+}
+
+#welcome-message {
+  color: #1f4870;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Notifications Card */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Notifications */
+.notification-row {
+  background-color: #e7f1ff;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.notification-row i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #1f4870;
+}
+
+/* Clear Notifications Button */
+#clear-notifications {
+  background-color:#1f4870;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+#clear-notifications:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+/* See More / Show Less Button */
+#read-more-btn {
+  background-color: #1f4870;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  margin: auto;
+}
+
+#read-more-btn:hover {
+  background-color: #163754;
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}

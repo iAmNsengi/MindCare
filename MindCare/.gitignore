@@ -7,3 +7,4 @@ MindCare/myapp/credentials.json
 __pycache__/
 *.sqlite3
 .env
+venv/
