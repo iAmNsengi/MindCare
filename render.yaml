@@ -3,7 +3,7 @@ services:
     name: your-app-name
     env: python
     buildCommand: ./build.sh
-    startCommand: gunicorn Mindcare.eyt.wsgi:application
+    startCommand: gunicorn Mindcare.Mindcare.eyt.wsgi:application
     disk:
       name: media
       mountPath: /app/media
