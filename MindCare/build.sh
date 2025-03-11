@@ -40,6 +40,7 @@ python manage.py migrate --noinput || {
     echo "Migration failed, but continuing..."
 }
 
-python manage.py createsuperuser --noinput --username "admin" --email "admin@example.com" --password "123456"
+echo "Creating superuser if not exists..."
+python manage.py shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin', 'admin@example.com', '123456') if not User.objects.filter(username='admin').exists() else print('Superuser already exists')"
 
 echo "Build completed!"
