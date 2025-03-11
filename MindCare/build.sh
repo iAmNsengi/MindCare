@@ -40,4 +40,6 @@ python manage.py migrate --noinput || {
     echo "Migration failed, but continuing..."
 }
 
+python manage.py createsuperuser --noinput --username "admin" --email "admin@example.com" --password "123456"
+
 echo "Build completed!"

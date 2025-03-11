@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'django-insecure-83$rtda%$o2^e##m_1u+zo(*vw@tkvk8e$b^t%uachc_d!+&20')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 # settings.py
 APPEND_SLASH = False
 
